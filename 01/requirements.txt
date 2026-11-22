@@ -1,0 +1,48 @@
+# Python 3.12; stable releases checked on 2026-11-13.
+
+# Notebook / UI
+jupyterlab==4.6.6
+ipywidgets==8.1.9
+pandas==3.1.1
+streamlit==1.67.0
+python-dotenv==1.2.4
+
+# OpenAI / LangChain
+# ragas/instructor currently requires jiter < 0.15.
+openai==3.3.0
+langchain==1.5.0
+langchain-core==1.8.0
+langchain-classic==1.0.8
+langchain-openai==1.7.4
+# ragas 0.4.3 still imports VertexAI modules removed in 0.4.2.
+langchain-community==0.4.1
+langchain-text-splitters==1.1.3
+langsmith==0.14.17
+
+# RAG
+langchain-chroma==1.1.0
+chromadb==1.5.9
+beautifulsoup4==4.15.0
+pypdfium2==5.15.2
+scikit-learn==1.9.1
+numpy==2.5.4
+requests==2.34.2
+httpx==0.28.1
+
+# Graph / tools
+langgraph==1.2.21
+langchain-tavily==0.2.18
+langgraph-supervisor==0.0.31
+langchain-upstage==0.7.7
+
+# Evaluation
+ragas==0.4.3
+# langchain-upstage needs huggingface-hub < 1 via tokenizers.
+datasets==5.0.1
+sacrebleu==2.6.0
+# ragas TestsetGenerator (OverlapScoreBuilder) needs it; ragas only lists it in the [all] extra.
+rapidfuzz==3.14.6
+pydantic==2.14.3
+
+# langchain-upstage requires pypdf < 7.
+pypdf==6.21.4
